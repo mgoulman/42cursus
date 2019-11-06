@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <title>Calc</title>
+ </head>
+ <body>
+     <input id="left" type=text name="left"></input>
+     <select id="select">
+       <option value="0">+</option>
+       <option value="1">-</option>
+       <option value="2">*</option>
+       <option value="3">/</option>
+       <option value="4">%</option>
+     </select>
+     <input id="right" type=text name="right"></input>
+     <input type="button" name="Try me!" value="Try me!" onclick="Calc();">
+
+   <script>
+     function Calc() {
+       var n1 =  document.getElementById("left").value.trim();
+       var n2 = document.getElementById("right").value.trim();
+       var nb1 = Number(n1);
+       var nb2 = Number(n2);
+       if (nb1 < 0 || nb2 < 0 || nb1 !== parseInt(nb1, 10) || nb2 !== parseInt(nb2, 10) || n1 =='' || n2 == '')
+       {
+         alert("Error :(");
+         return false;
+       }
+       var e = document.getElementById("select");
+       var op = e.options[e.selectedIndex].value;
+       if (op == 0){
+         res = nb1 + nb2;
+         console.log(res);
+         alert(res);}
+       else if (op == 1){
+         res = nb1 - nb2;
+         console.log(res);
+         alert(res);}
+       else if (op == 2){
+         res = nb1 * nb2;
+         console.log(res);
+         alert(res);}
+       else if (op == 3){
+         if (nb2 == 0)
+           res = "It's over 9000!";
+         else
+           res = nb1 / nb2;
+         console.log(res);
+         alert(res);}
+       else if (op == 4){
+         if (nb2 == 0)
+           res = "It's over 9000!";
+         else
+           res = nb1 % nb2;
+         console.log(res);
+         alert(res);}
+       }
+       window.setInterval(function(){
+         alert("Please, use me...");
+     }, 30000);
+   </script>
+ </body>
+</html>

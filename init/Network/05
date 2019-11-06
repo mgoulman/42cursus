@@ -1,0 +1,1 @@
+ping -c 2 slash16.org | grep PING | cut -d '(' -f 2 | cut -d ')' -f 1

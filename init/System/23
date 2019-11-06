@@ -1,0 +1,2 @@
+pour se connecter en tant que ce nouvelle utilisateur en session graphique c'est just entrer le nom d'utilisateur el le mot de passe 
+pour se connecter en tant que ce nouvelle utilisateur en session ssh il faut entrer la command ssh remote_user@remote_host et entrer le mot de passe.

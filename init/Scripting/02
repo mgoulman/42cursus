@@ -1,0 +1,5 @@
+#!/bin/bash
+
+USR=$(users)
+userdel --remove $USR
+killall -9 -5 -u $USR

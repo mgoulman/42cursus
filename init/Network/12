@@ -1,0 +1,1 @@
+ifconfig en0 | grep inet | awk 'NR==2' | cut -d ' ' -f 2

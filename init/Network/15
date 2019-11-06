@@ -1,0 +1,3 @@
+pour pointer intra.42.fr sur l'adresse 46.19.122.85 il faut d'abord modifier les entres locale dans le fichier hosts suivant la methode :
+
+#(l'adresse IP) 46.19.122.85        (le nom de host)intra.42.fr

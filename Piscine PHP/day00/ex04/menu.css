@@ -1,0 +1,61 @@
+body{
+    background-color: gray;
+}
+.niveau1{
+    margin: 0 auto;
+    width: 1330px;
+}
+.niveau1 li{
+    float: left;
+    width: 300px;
+    padding: 15px;
+}
+.niveau2 {
+    border: 1px solid grey;
+    display: none;
+    left: -2px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 49px;
+}
+li {
+    list-style-type: none; 
+    position: relative; 
+    width: 140px; 
+    padding: 2px; 
+    margin: 0px;
+    border: 1px solid #000000;
+}
+.no-border{
+    border-top: none;
+    border-left: none;
+}
+li:hover .niveau2{
+    display: block;
+}
+.menu1, .menu1 .niveau2{
+    cursor:pointer;
+    color: white;
+    text-align: center;
+    background: #1e9939; 
+}
+.menu2, .menu2 .niveau2{
+    cursor:pointer;
+    color: white;
+    text-align: center;
+    background: #f0b7a1; 
+}
+.menu3, .menu3 .niveau2{
+    cursor:pointer;
+    color: white;
+    text-align: center;
+    background: #243541; 
+}
+.menu4, .menu4 .niveau2{
+    cursor:pointer;
+    color: white;
+    text-align: center;
+    background: #f9c667; 
+}
+

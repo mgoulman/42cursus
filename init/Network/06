@@ -1,0 +1,2 @@
+ le path complet du fichier dans lequel est écrit l’adresse IP du serveur
+ DNS que nous utilisons est : /etc/resolv.conf
